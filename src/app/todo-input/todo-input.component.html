@@ -1,0 +1,7 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput type="text" placeholder="add new task" name="ntask" #ntask="ngModel"[(ngModel)]="task_name" >
+    </mat-form-field>
+    <button mat-raised-button color="accent" (click)="addNewTask()" >ADD NEW TASK</button>
+    <button mat-raised-button color="accent" (click)="deleteTask()" >DELETE TASK</button>
+</form>
